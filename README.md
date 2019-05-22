@@ -2,10 +2,14 @@
 0-9 digit classification for Artificial Intelligence using SVD
 
 ## An SVD basis classification algorithm
-#### Training.
-For the training set of known digits, compute the SVD of each
-class of digits, and use k basis vectors for each class.
-#### Classification.
-For a given test digit, compute its relative residual in all
-ten bases. If one residual is significantly smaller than all the others,
-classify as that. Otherwise give up.
+### Training.
+#### digitsTrainCombined.csv –
+this is a 256 × 4000 matrix. Each column represents a 16 × 16 grayscale image of a digit. The first 400 columns are examples of zeros, the
+next 400 columns are examples of ones, and so forth, with the last 400 columns being
+examples of nines.
+
+### Classification.
+#### digitsTestCombined.csv – this is a 256×1000 matrix. Each column represents a 16×16
+grayscale image of a digit. The first 100 columns are examples of zeros, the next 100
+columns are examples of ones, and so forth, with the last 100 columns being examples
+of nines.

@@ -3,7 +3,7 @@
 
 ## An SVD basis classification algorithm
   (a) Training samples from each of c classes of objects are chosen, with each object represented
-      as a vector in R. n where n is the number of attributes describing each object (for example, pixels for images). </br>  
+      as a vector in R. n where n is the number of attributes describing each object (for example, pixels for images).  
   (b) For each class, create an n × q matrix where q is the number of training samples for that class. </br>
   (c) Find the SVD of each of these training matrices.</br>
   (d) Given a test sample z (which needs to be represented as a column vector), for each class calculate
